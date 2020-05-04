@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>반응형 사이트 만들기</title>
+	<link rel="stylesheet" href="../css/base.css">
+	<style>
+		.wrapper {max-width: 1200px; margin: auto;}
+		.box {width: 24%; margin: 0.5%; height: 500px; float: left;}
+		.box1 {background-color: #3dc2c2;}
+		.box2 {background-color: #b547c4;}
+		.box3 {background-color: #66bb35;}
+		.box4 {background-color: #bb3535;}
+
+		@media screen and (max-width: 1199px) {
+			
+		}
+
+		@media screen and (max-width: 991px) {
+			.box {width: 32.3333%;}
+		}
+
+		@media screen and (max-width: 767px) {
+			.box {width: 49%;}
+		}
+
+		@media screen and (max-width: 575px) {
+			.box {width: 99%;}
+		}
+	</style>
+</head>
+<body>
+	<div class="wrapper clear">
+		<div class="box box1"></div>
+		<div class="box box2"></div>
+		<div class="box box3"></div>
+		<div class="box box4"></div>
+	</div>
+</body>
+</html>
