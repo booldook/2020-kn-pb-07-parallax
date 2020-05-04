@@ -13,18 +13,21 @@
 		background-position: 200px 100px | 30% 50% ...
 		background-size: (자기사이즈) 100% auto | auto 100% | cover
 		background-size: 200px 500px
+		background-attachment: fixed <-- parallax효과
+		background-image: linear-gradient([각도], #9deb7f, #256225 ...);
+		[각도]: to left | to left top | 45deg
+		background-image: radial-gradient(#9deb7f, #256225 ...);
+		background: 컬러 url() repeat position
 		*/
 		.page {height: 100vh;}
 		.page1 {
 			background-color: #cfcfa4; 
-			background-image: url('../img/bg.gif');
-			background-repeat: repeat;
+			background-image: url('../img/p1.jpg'), url('../img/bg.gif');
+			background-repeat: no-repeat, repeat;
+			background-position: right bottom, top left;
 		}
 		.page2 {
-			background-color: #ade0a0;
-			background-image: url('../img/map.jpg');
-			background-repeat: no-repeat;
-			background-position: center;
+			background: #ade0a0 url('../img/map.jpg') no-repeat center;
 		}
 		.page3 {
 			background-color: #90bace;
@@ -32,8 +35,12 @@
 			background-repeat: no-repeat;
 			background-position: center;
 			background-size: cover;
+			background-attachment: fixed;
 		}
-		.page4 {background-color: #c58ea3;}
+		.page4 {
+			background-image: linear-gradient(275deg, #9deb7f, #256225);
+			/* background-image: radial-gradient(#9f3da8, #0dda0d); */
+		}
 	</style>
 </head>
 <body>
