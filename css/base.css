@@ -1,0 +1,9 @@
+/*********** Normalize ***********/
+html, body, h1, h2, h3, h4, h5, h6, p, div, input, textarea, select {margin: 0; padding: 0; box-sizing: border-box;}
+img {vertical-align: bottom;}
+
+/*********** 공통사항 ***********/
+.clear:after {content: ""; display: block; clear: both;}
+.img {width: 100%;}
+.imgx {max-width: 100%;}
+.pointer {cursor: pointer;}
