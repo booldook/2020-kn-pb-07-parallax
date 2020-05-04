@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>background를 알아보자</title>
+	<link rel="stylesheet" href="../css/base.css">
+	<style>
+		/*
+		background-image: url('../img/bg.gif');
+		background-repeat: (repeat) | no-repeat | repeat-x | repeat-y
+		background-position: (left top) | center | [left, center, right] [top center bottom]
+		background-position: 200px 100px | 30% 50% ...
+		background-size: (자기사이즈) 100% auto | auto 100% | cover
+		background-size: 200px 500px
+		*/
+		.page {height: 100vh;}
+		.page1 {
+			background-color: #cfcfa4; 
+			background-image: url('../img/bg.gif');
+			background-repeat: repeat;
+		}
+		.page2 {
+			background-color: #ade0a0;
+			background-image: url('../img/map.jpg');
+			background-repeat: no-repeat;
+			background-position: center;
+		}
+		.page3 {
+			background-color: #90bace;
+			background-image: url('../img/parallax3.jpg');
+			background-repeat: no-repeat;
+			background-position: center;
+			background-size: cover;
+		}
+		.page4 {background-color: #c58ea3;}
+	</style>
+</head>
+<body>
+	<!-- .page.page$*4 -->
+	<div class="page page1"></div>
+	<div class="page page2"></div>
+	<div class="page page3"></div>
+	<div class="page page4"></div>
+</body>
+</html>
