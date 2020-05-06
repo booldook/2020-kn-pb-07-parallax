@@ -6,7 +6,7 @@ body {font-family: 'Lato', sans-serif; height: 5000px;}
 
 
 /********** header **********/
-.header {color: #555;}
+.header {color: #555; position: fixed; z-index: 99; width: 100%;}
 .navi-wrap {float: left;}
 .navi-wrap > a {padding: 16px; float: left; color: inherit; text-decoration: none;} 
 .navi-wrap > a:hover {color: #000; background-color: #ccc;} 
@@ -18,6 +18,17 @@ body {font-family: 'Lato', sans-serif; height: 5000px;}
 .search-wrap > .fa-search:hover {background-color: #f21; color: #fff;} 
 
 /********** main-wrap **********/
+.main-wrap {
+	height: 100vh; opacity: 0.75; position: relative;
+	/* background: url('../img/parallax1.jpg') no-repeat center;	 */
+	background-image: url('../img/parallax1.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-attachment: fixed;	
+}
+.main-logo {position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); background-color: #000; color: #fff; font-weight: normal; padding: 12px 24px; 
+	letter-spacing: 10px;}
 
 
 /********** about-wrap **********/
