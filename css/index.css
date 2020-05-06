@@ -4,6 +4,9 @@
 /********** 공통사항 **********/
 body {font-family: 'Lato', sans-serif; height: 5000px;}
 .wrapper {max-width: 980px; margin: auto; padding: 40px 16px;}
+.wrapper > .title {text-align: center; font-size: 24px; font-weight: normal; padding: 16px 0;}
+.wrapper > .slogan {text-align: center; font-size: 16px; font-weight: normal; padding: 16px 0; font-style: italic;}
+.wrapper > .desc {line-height: 150%; padding: 16px 0;}
 
 
 /********** header **********/
@@ -35,6 +38,24 @@ body {font-family: 'Lato', sans-serif; height: 5000px;}
 
 
 /********** about-wrap **********/
+.about-wrap {color: #888;}
+.abouts {padding: 16px 0;}
+.abouts > article {width: 100%; float: left; padding: 16px;}
+.abouts > .photo > h4 {margin-bottom: 48px; text-align: center;}
+.abouts .fa-user {margin-right: 16px;}
+.abouts > .photo > img {border-radius: 5px; opacity: 0.6;}
+.abouts > .photo > img:hover {opacity: 1;}
+.abouts > .about {display: none; line-height: 150%;}
+.skills {}
+.skills > h4 {text-align: center; font-size: 18px; font-weight: normal; margin-bottom: 24px;}
+.skill > h5 {font-weight: normal; letter-spacing: 10px; font-size: 16px; padding: 16px 0;}
+.skill > .bars {background-color: #ccc;}
+.skill > .bars > .bar {background-color: #555; color: #fff; padding: 8px; 
+	text-align: center;}
+.skill-grp > :nth-child(1) .bar {width: 90%;}
+.skill-grp > :nth-child(2) .bar {width: 85%;}
+.skill-grp > :nth-child(3) .bar {width: 75%;}
+
 
 
 /********** pf-wrap **********/
@@ -52,6 +73,8 @@ body {font-family: 'Lato', sans-serif; height: 5000px;}
 	.search-wrap > .fa-bars {display: none;}
 	.search-wrap > .fa-search {display: block;}
 	.main-logo span {display: inline;}
+	.abouts > article {width: 50%;}
+	.abouts > .about {display: block;}
 }
 
 @media screen and (min-width: 768px) {
