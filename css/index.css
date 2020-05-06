@@ -72,7 +72,7 @@ body {font-family: 'Lato', sans-serif; height: 5000px;}
 .works {color: #888;}
 .work {width: 100%; float: left;}
 .work:hover {opacity: 0.7;}
-.bts {text-align: center; padding: 32px 0;}
+.pf-wrap .bts {text-align: center; padding: 32px 0;}
 .bt-load {border: none; background-color: #eee; color: #000; padding: 16px; cursor: pointer;}
 .bt-load:hover {background-color: #ccc;}
 
@@ -87,6 +87,11 @@ body {font-family: 'Lato', sans-serif; height: 5000px;}
 .info > .fa:hover {color: #000;}
 .contact-form > p {padding: 16px 0;}
 .contact-form > p > .fa {font-size: 14px;}
+.contact-form input {border: 1px solid #aaa; padding: 16px; 
+	width: 100%; margin-bottom: 1%; float: left;}
+.contact-form .bts {padding-top: 8px; text-align: right;}
+.contact-form .bt-send {border: none; padding: 16px; font-size: 16px; color: #fff; background-color: #000; cursor: pointer;}
+.contact-form .bt-send:hover {background-color: #eee; color: #000;}
 
 /********** footer **********/
 
@@ -108,6 +113,8 @@ body {font-family: 'Lato', sans-serif; height: 5000px;}
 	.work {width: 23%; margin: 1%;}
 	.map {width: 30%;}
 	.contact-form {width: 70%; padding-left: 32px;}
+	.contact-form input[name='name'] {width: 49%; margin-right: 1%;}
+	.contact-form input[name='email'] {width: 49%; margin-left: 1%;}
 }
 
 @media screen and (min-width: 992px) {
