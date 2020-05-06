@@ -78,6 +78,15 @@ body {font-family: 'Lato', sans-serif; height: 5000px;}
 
 /********** contact-wrap **********/
 .contact-banner {background-image: url('../img/parallax3.jpg');}
+.contacts {color: #888;}
+.map {float: left; width: 100%;}
+.map > img {border-radius: 5px;}
+.contact-form {float: right; width: 100%;}
+.info {padding: 8px 0; font-size: 20px;}
+.info > .fa {width: 30px;}
+.info > .fa:hover {color: #000;}
+.contact-form > p {padding: 16px 0;}
+.contact-form > p > .fa {font-size: 14px;}
 
 /********** footer **********/
 
@@ -97,6 +106,8 @@ body {font-family: 'Lato', sans-serif; height: 5000px;}
 @media screen and (min-width: 768px) {
 	.prj {width: 25%;}
 	.work {width: 23%; margin: 1%;}
+	.map {width: 30%;}
+	.contact-form {width: 70%; padding-left: 32px;}
 }
 
 @media screen and (min-width: 992px) {
