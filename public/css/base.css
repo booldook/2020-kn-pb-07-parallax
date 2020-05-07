@@ -1,6 +1,7 @@
 /*********** Normalize ***********/
-html, body, h1, h2, h3, h4, h5, h6, p, div, form, input, textarea, select, header, section, article, aside, footer {margin: 0; padding: 0; box-sizing: border-box;}
+html, body, h1, h2, h3, h4, h5, h6, p, div, form, input, textarea, select, header, section, article, aside, footer, table, thead, tbody, tr, td, th {margin: 0; padding: 0; box-sizing: border-box;}
 img {vertical-align: bottom;}
+table {border-collapse: collapse;}
 
 /*********** 공통사항 ***********/
 .clear:after {content: ""; display: block; clear: both;}
