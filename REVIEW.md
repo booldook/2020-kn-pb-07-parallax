@@ -4,8 +4,33 @@
 2. **h1~h6**: 제목을 나타낼 때 쓴다. (font-weight: bold, padding, margin을 가진다)
 3. **p**: 내용을 나타낼 때 쓴다. (margin-bottom을 가진다)
 4. **ul, li, dl, dd, dt**: 목록을 나타낼 때 쓴다.
-5. **form, table**
-6. **Normalize**: block요소는 속성을 가지고 있기 때문에 초기화 하여 필요할 때 속성을 부여해서 쓴다
+5. **form**
+6. **table**: 목록을 표로 나타낼 때 쓴다.
+
+```html
+<table>
+	<thead>
+		<tr>
+			<th>제목</th>
+			<th>제목</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>내용</td>
+			<td>내용</td>
+		</tr>
+	</tbody>
+</table>
+```
+
+```css
+/* table Normalize */
+table, thead, tbody, tr, th, td {margin: 0; padding: 0; box-sizing: border-box;}
+table {border-collapse: collapse;}
+```
+
+7. **Normalize**: block요소는 속성을 가지고 있기 때문에 초기화 하여 필요할 때 속성을 부여해서 쓴다
 
 ```css
 html, body, div, ul, li, dl, dd, dt, p, h1, h2, h3, h4, h5, h6, form, input, select, textarea, header, footer, section, article, aside, table, thead, tbody, tr, td, th {

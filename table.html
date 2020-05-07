@@ -5,8 +5,8 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>table태그를 알아보자</title>
 	<style>
-		.tb {width: 800px; margin: auto; border: 1px solid red; border-collapse: collapse;}
-		.tb td, .tb th {border: 1px solid red; padding: 0;}
+		.tb {width: 800px; margin: 20px auto; border: 1px solid red; border-collapse: collapse;}
+		.tb td, .tb th {border: 1px solid red; padding: 10px; text-align: center;}
 	</style>
 </head>
 <body>
@@ -36,6 +36,51 @@
 				<td>3500</td>	
 			</tr>
 		</tbody>
+	</table>
+	<table class="tb">
+		<tr>
+			<td colspan="2">A</td>
+			<td>B</td>
+			<td rowspan="2">C</td>
+		</tr>
+		<tr>
+			<td>D</td>
+			<td>E</td>
+			<td>F</td>
+		</tr>
+		<tr>
+			<td rowspan="2">G</td>
+			<td>H</td>
+			<td colspan="2">I</td>
+		</tr>
+		<tr>
+			<td colspan="3">J</td>
+		</tr>
+	</table>
+	<table class="tb">
+		<tr>
+			<td colspan="3">A</td>
+			<td>B</td>
+			<td rowspan="3">C</td>
+		</tr>
+		<tr>
+			<td colspan="2">D</td>
+			<td>E</td>
+			<td>F</td>
+		</tr>
+		<tr>
+			<td rowspan="2">G</td>
+			<td colspan="2" rowspan="2">H</td>
+			<td>I</td>
+		</tr>
+		<tr>
+			<td>J</td>
+			<td>K</td>
+		</tr>
+		<tr>
+			<td colspan="4">L</td>
+			<td>M</td>
+		</tr>
 	</table>
 </body>
 </html>
