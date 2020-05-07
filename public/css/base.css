@@ -5,7 +5,7 @@ table {border-collapse: collapse;}
 ul, ol {list-style: none;}
 
 /*********** 공통사항 ***********/
-.clear:after {content: ""; display: block; clear: both;}
+.clear::after {content: ""; display: block; clear: both;}
 .img {width: 100%;}
 .imgx {max-width: 100%;}
 .pointer {cursor: pointer;}

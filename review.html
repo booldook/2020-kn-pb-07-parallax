@@ -48,5 +48,36 @@
 		<dt>카페라떼</dt>
 		<dd>우유와 커피의 만남</dd>
 	</dl>
+
+	<div style="width: 300px; height: 300px; border: 5px outset red;"></div>
+
+	<style>
+		body {height: 5000px;}
+		.anchor > a:link {color: aqua;}
+		.anchor > a:visited {color: green;}
+		.anchor > a:hover {color: purple;}
+		.anchor > a:active {color: red;}
+	</style>
+	<div class="anchor">
+		<a href="https://vuejs.org">vue.js</a>
+	</div>
+	<style>
+		/* .wrapper :last-child {border: 2px solid red;}
+		.wrapper > :last-child {border: 2px solid green;} */
+		.lists > span:last-child {border: 2px solid red;}
+		.list.test {border: 2px solid blue;}
+	</style>
+	<h1>순서선택자</h1>
+	<div class="wrapper">
+		<div class="lists">
+			<div class="list">A</div>
+			<div class="list test">B</div>
+		</div>
+		<div class="lists">
+			<div class="list">가</div>
+			<div class="list">나</div>
+			<span disabled="disabled">다</span>
+		</div>
+	</div>
 </body>
 </html>

@@ -100,8 +100,47 @@ img {
 
 
 ## Design 관련
+1. border: 1px solid(dashed, dotted, double, inset, outset, groove, none) red
+2. background-image: url('../img/bg.gif');
+3. background-repeat: (repeat) | no-repeat | repeat-x | repeat-y
+4. background-position: (left top) | center | [left, center, right] [top center bottom]
+5. background-position: 200px 100px | 30% 50% ...
+6. background-size: (자기사이즈) 100% auto | auto 100% | cover
+7. background-size: 200px 500px
+8. background-attachment: fixed <-- parallax효과
+9. background-image: linear-gradient([각도], #9deb7f, #256225 ...);
+	- [각도]: to left | to left top | 45deg
+10. background-image: radial-gradient(#9deb7f, #256225 ...);
+11. 합쳐쓰기 -> background: 컬러 url() repeat position;
 
+## 기타
+### pseudo-element(:, ::)
+1. .clear::after -> 태그가 닫히기 직전
+2. .box::before -> 태그가 열리지마자
 
+```html
+<div>
+	<!-- :before -->
+	<p>ABCD</p>
+	<!-- :after -->
+</div>
+```
+3. :hover, :link, :active, :visited -> 순서는 아래처럼
+- link: 기본값(한번도 방문하지 않았던 사이트)
+- visited: 방문했던 사이트 링크
+- hover: 마우스를 올리면...
+- active: 마우스를 누르고 있는 동안
 
-
-# 기타
+## 선택자(Selector)
+1. 아이디선택자: #box
+2. 클래스선택자: .box
+3. 태그선택자: div
+4. 자식선택자: div > p (바로 밑에있는 자식)
+5. 자손선택자: div p (안에 있는 자손)
+7. 순서선택자: :first-child, :last-child, :nth-child(2)
+8. 읽기-붙여쓰면 그리고로 읽는다.
+- .wrapper > span:last-child -> span이면서 마지막자식
+- .list.active -> 클래스list이면서 클래스active 인 요소
+9. 속성선택자: input[name="userid"], button[disabled="disabled"]
+10. :not(:last-child) - 제외
+11. 그 외의 선택자는 [여기](https://www.w3schools.com/cssref/css_selectors.asp)를 참고한다.
