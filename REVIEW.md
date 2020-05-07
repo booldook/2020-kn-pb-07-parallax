@@ -60,5 +60,48 @@ img {
 
 
 # CSS 정리
+## 기본속성
+1. initial: 기본값으로 재지정하겠다.
+2. unset: 상속받은값을 삭제하겠다.
+3. inherit: 부모의 값을 상속받겠다.
+```html
+<div class="box">
+	<p class="list">가나다</p>
+</div>
+```
+```css
+.box {color: red;}
+.list {color: inherit;}
+```
+
+## text 관련
+1. font-family: 'Loto', sans-serif;
+2. font-size: 16px(기본)
+3. color: red, #f00, rgb(255, 0, 0), rgba(255, 0, 0, 1), hsl ...
+4. font-weight: normal, lighter, bold, bolder, 200, 300, 400 ...
+5. font-style: italic, oblique;
+6. text-align: center, left, right, justify
+7. vertical-align: top, middle, baseline(기본값), bottom
+8. text-decoration: line-through, underline, overline, none
+9. letter-spacing: 자간
+10. line-height: 줄간 
+
+## layout 관련
+1. float: left, right, none
+2. position: static(기본값), relative(기준점), absolute, fixed(화면을 기준점)
+3. flex
+4. grid
+
+## Dimension 관련
+1. width, height - 고정값
+2. max-width, max-height - 최대값
+3. min-wdith, min-height - 최소값
+4. margin, padding ...
+
+
+## Design 관련
+
+
+
 
 # 기타
