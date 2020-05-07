@@ -33,7 +33,7 @@ table {border-collapse: collapse;}
 7. **Normalize**: block요소는 속성을 가지고 있기 때문에 초기화 하여 필요할 때 속성을 부여해서 쓴다
 
 ```css
-html, body, div, ul, li, dl, dd, dt, p, h1, h2, h3, h4, h5, h6, form, input, select, textarea, header, footer, section, article, aside, table, thead, tbody, tr, td, th {
+html, body, h1, h2, h3, h4, h5, h6, p, div, form, input, textarea, select, header, section, article, aside, footer, table, thead, tbody, tr, td, th, ul, ol, li, dl, dt, dd {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
